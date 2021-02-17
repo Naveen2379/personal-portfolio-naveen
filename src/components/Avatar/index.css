@@ -1,0 +1,11 @@
+.avatar {
+    border: 1px solid #282c34;
+    width: 20rem;
+    height: 20rem;
+    margin: 10px 50px;
+}
+
+.avatar image {
+    width: inherit;
+    height: inherit;
+}

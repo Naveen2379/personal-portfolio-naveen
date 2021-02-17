@@ -1,0 +1,6 @@
+.links {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    height: 100%;
+}
