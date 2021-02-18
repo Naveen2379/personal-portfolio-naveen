@@ -1,0 +1,6 @@
+.content {
+    display: flex;
+    justify-content: space-around;
+    background-color: #141c3a;
+    padding: 20px;
+}

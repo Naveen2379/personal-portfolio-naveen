@@ -1,11 +1,21 @@
 import React from 'react';
 import './index.css';
-import AvatarImg from './avatar.png';
+import Category from "../Category";
+
 
 const Content = () => {
+    console.log('content component');
+    //const [] = useState();
+    const categories = [{type: 'Works'}, {type: 'Blogs'}, {type: 'Photography'}];
+
+    const category = categories.map( (category) => {
+        return <Category key={category.type} categoryDetails={category} />
+    });
     return (
         <div className='content'>
-            Content goes here
+            {categories.map((category) => {
+                return <Category key={category.type} categoryDetails={category}/>
+            })}
         </div>
     )
 }
