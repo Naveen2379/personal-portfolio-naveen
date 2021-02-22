@@ -4,3 +4,12 @@
     background-color: #141c3a;
     padding: 20px;
 }
+
+.content .category {
+    justify-content: center;
+    display: flex;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 20%;
+    background-color: #282c34;
+}

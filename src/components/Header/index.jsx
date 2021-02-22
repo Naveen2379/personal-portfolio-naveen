@@ -5,11 +5,16 @@ import Links from "../Links";
 import './index.css';
 
 
-const Header = () => {
+const Header = (props) => {
     return (
         <div className='header'>
-            <Logo />
-            <Links />
+            <div className='logo-links'>
+                <Logo />
+                <Links />
+            </div>
+            <div className='introduction-content'>
+                {props.children}
+            </div>
         </div>
     )
 }

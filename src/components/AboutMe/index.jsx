@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css';
 import DownloadResume from "../DownloadResume";
+import ContactInfo from "../ContactInfo";
 
 
 const AboutMe = () => {
@@ -13,7 +14,10 @@ const AboutMe = () => {
                 Proficient in development of web applications using ArcGIS API for JavaScript and Web appBuilder tool for ArcGIS.
                 Intrigued in finding breakthroughs for the real-time problems that benefit at a large scale.
             </p>
-            <DownloadResume />
+            <div className='resume-contact-info'>
+                <DownloadResume />
+                <ContactInfo />
+            </div>
         </div>
     )
 }

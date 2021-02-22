@@ -1,5 +1,4 @@
-.avatar {
-    border: 1px solid #282c34;
+.avatar-profile {
     width: 30rem;
     margin: 10px 50px;
     position: relative;
@@ -8,16 +7,21 @@
     /*margin: 0;*/
 }
 
-.avatar .image {
+.avatar-profile .avatar {
+    width: 80%;
+    height: 80%;
+}
+
+.avatar-profile .image {
     width: 100%;
     height: 100%;
     opacity: 0.9;
 }
 
-.avatar .title {
+.avatar-profile .title {
     position: absolute;
-    bottom: 0;
-    right: 0.5rem;
+    bottom: 5rem;
+    right: 6.5rem;
     color: cornsilk;
     text-align: end;
 }
