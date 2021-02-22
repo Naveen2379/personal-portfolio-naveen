@@ -7,6 +7,7 @@ const Works = () => {
     console.log('Works');
     const [repos, setRepos] = useState([]);
     useEffect( () => {
+/*
         async function ListAllRepos() {
             const response = await fetch('https://api.github.com/users/naveen2379/repos');
             if(!response.ok) {
@@ -17,9 +18,10 @@ const Works = () => {
         }
         ListAllRepos()
             .then( (repos) => {
-                setRepos(repos, console.log(repos));
+                setRepos(repos);
             })
             .catch( err => console.log(err));
+*/
 
     }, []);
 
@@ -27,7 +29,7 @@ const Works = () => {
         <div className='works'>
             <h1>Works</h1>
             <div className='repo-details'>
-                {repos && repos.map( (repo) => {
+                {repos.map( (repo) => {
                     return <div key={repo.id}>
                         <Repo_Details details={repo} />
                     </div>

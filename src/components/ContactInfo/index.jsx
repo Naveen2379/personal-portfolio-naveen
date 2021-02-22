@@ -1,17 +1,11 @@
 import React from 'react';
 import {useState} from "react";
+import './index.css';
+
+
 
 const ContactInfo = () => {
     const [contactInfo, setContactInfo] = useState({});
-
-    /*useEffect(() => {
-        const new_contactInfo = {
-            name: 'Naveen Kairamkonda',
-            mobileNumber: '+91 8341084619',
-            email: 'naveen2379@gmail.com'
-        }
-        setContactInfo();
-    }, [contactInfo]);*/
 
     const showContactInfo = () => {
         const new_contactInfo = {
@@ -19,17 +13,20 @@ const ContactInfo = () => {
             mobileNumber: '+91 8341084619',
             email: 'naveen2379@gmail.com'
         }
-        if(contactInfo) {
-            setContactInfo({})
+        console.log(contactInfo);
+        if(Object.keys(contactInfo).length === 0) {
+            console.log('inside if');
+            setContactInfo(new_contactInfo);
         }
         else {
-            setContactInfo(new_contactInfo);
+            console.log('inside else');
+            setContactInfo({});
         }
     }
     return (
-        <div>
-            <button onClick={showContactInfo}>Contact Info</button>
-            {contactInfo ? contactInfo.mobileNumber : null}
+        <div className='contact-info'>
+            <button className='button' onClick={showContactInfo}>Contact Info</button><br/>
+            { contactInfo !== {} ? contactInfo.mobileNumber : null }
         </div>
     )
 }
