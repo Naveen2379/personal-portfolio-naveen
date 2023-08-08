@@ -4,6 +4,9 @@
     font-weight: 600;
     width: 40rem;
     line-height: 2.0rem;
+    .border-rght {
+        border-right: 1px solid gray;
+    }
 }
 
 .about-me .description {

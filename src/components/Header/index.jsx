@@ -9,7 +9,7 @@ const Header = (props) => {
     return (
         <div className='header'>
             <div className='logo-links'>
-                <Logo />
+                {/* <Logo /> */}
                 <Links />
             </div>
             <div className='introduction-content'>
